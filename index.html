@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aman Singh's portfolio - aspiring data analyst and computer science graduate seeking entry-level analytics opportunities.">
+  <title>Aman Singh | Aspiring Data Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .profile-photo{position:absolute;top:44px;left:50%;width:282px;height:382px;transform:translateX(-50%);object-fit:cover;object-position:center 24%;border:10px solid var(--paper);box-shadow:14px 14px 0 rgba(108,132,56,.18);z-index:1}
+    @media(max-width:760px){.profile-photo{width:220px;height:300px;top:30px}}
+    .hackathon-gallery{padding-top:0}.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.gallery-item{margin:0}.gallery-item img{display:block;width:100%;height:260px;object-fit:cover;background:#e7ebd7}.gallery-item:nth-child(2) img,.gallery-item:nth-child(5) img{object-position:center 35%}.gallery-item:nth-child(5) img{object-fit:contain;object-position:center;background:#e7ebd7}.gallery-item figcaption{padding-top:12px;color:var(--muted);font:11px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.06em}@media(max-width:760px){.gallery-grid{grid-template-columns:1fr 1fr;gap:14px}.gallery-item img{height:190px}.gallery-item figcaption{font-size:10px;line-height:1.5}}
+    .achievement-section{padding-top:0}.achievement-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start}.achievement-copy h3{margin:0 0 18px;font-size:30px;line-height:1.1}.achievement-copy p{max-width:620px;color:var(--muted);font-size:15px;line-height:1.75}.achievement-list{display:grid;gap:22px;margin:28px 0}.achievement-list strong{display:block;margin-bottom:6px;color:var(--ink);font:500 12px "DM Mono",monospace;text-transform:uppercase}.achievement-list p{margin:0}.team-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}.team-links a{border-bottom:1px solid var(--ink);font-size:13px}.achievement-images{display:grid;gap:14px}.achievement-images img{display:block;width:100%;height:350px;object-fit:contain;background:#e7ebd7}.achievement-images img:first-child,.achievement-images img:last-child{object-position:center}@media(max-width:760px){.achievement-layout{display:block}.achievement-images{margin-top:38px}.achievement-images img{height:auto;max-height:360px}}
+    .startup-section{padding-top:0}.startup-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}.startup-images{display:grid;gap:14px}.startup-images img{display:block;width:100%;height:250px;object-fit:cover}.startup-images img:first-child{object-position:center 58%}.startup-images img:last-child{object-position:center 48%}.startup-copy h3{margin:0 0 18px;font-size:30px;line-height:1.1}.startup-copy p{max-width:620px;color:var(--muted);font-size:15px;line-height:1.75}.mentor-list{margin:24px 0;padding-left:18px;color:var(--muted);font-size:14px;line-height:1.8}.startup-links{display:flex;flex-wrap:wrap;gap:14px;margin-top:24px}.startup-links a{border-bottom:1px solid var(--ink);font-size:13px}@media(max-width:760px){.startup-layout{display:block}.startup-images{margin-bottom:38px}.startup-images img{height:220px}}
+    .certificates-section{padding-top:0}.certificate-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.certificate-card{border-top:1px solid var(--line);padding-top:16px}.certificate-card img{display:block;width:100%;height:360px;object-fit:contain;background:#e7ebd7;border:1px solid var(--line)}.certificate-card h3{margin:16px 0 8px;font-size:20px}.certificate-card p{margin:0 0 14px;color:var(--muted);font-size:13px;line-height:1.6}.certificate-link{font:500 11px "DM Mono",monospace;text-transform:uppercase;border-bottom:1px solid var(--ink)}@media(max-width:760px){.certificate-grid{grid-template-columns:1fr}.certificate-card img{height:320px}}
+    .about-portrait{display:block;width:min(100%,360px);height:430px;object-fit:cover;object-position:center 28%;border:10px solid var(--ink);box-shadow:14px 14px 0 rgba(23,33,29,.15)}@media(max-width:760px){.about-portrait{width:220px;height:280px;margin:0 auto 35px}}
+    .hero-contact{display:flex;align-items:center;gap:12px;margin-top:24px;color:var(--muted);font:12px "DM Mono",monospace}.hero-email{color:var(--ink)}.copy-email{border:1px solid var(--line);background:transparent;color:var(--ink);padding:8px 10px;font:500 10px "DM Mono",monospace;text-transform:uppercase;cursor:pointer}.copy-email:hover{background:var(--ink);color:var(--lime)}@media(max-width:760px){.hero-contact{align-items:flex-start;flex-direction:column;gap:8px}.hero-email{font-size:11px}}
+    .role-summary{margin:0 0 30px;color:var(--ink);font:500 11px "DM Mono",monospace;letter-spacing:.04em;text-transform:uppercase}.role-summary span{color:var(--muted);margin-right:8px}@media(max-width:760px){.site-nav{max-height:calc(100vh - 76px);overflow-y:auto}}
+    @media(min-width:761px){.site-header{gap:24px}.site-nav{gap:18px;font-size:11px}}
+  </style>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Aman home"><span class="brand-mark">A</span><span>aman.singh</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#hackathon-gallery">Photos</a>
+        <a href="#achievements">Wins</a>
+        <a href="#startup-uttarakhand">Startup</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="header-link" href="my_resume's/Aman_Singh_Resume.docx" download>Resume <span>&darr;</span></a>
+      <a class="header-link" href="https://www.linkedin.com/in/aman-singh-a9b589357/" target="_blank" rel="noreferrer">LinkedIn <span>&nearr;</span></a>
+      <a class="header-link" href="https://github.com/gusainaman07" target="_blank" rel="noreferrer">GitHub <span>&nearr;</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Open to entry-level data roles</p>
+          <div class="hero-contact"><span class="hero-email">amangusainofficial@gmail.com</span><button class="copy-email" type="button" data-email="amangusainofficial@gmail.com">Copy email</button></div>
+          <h1>I turn messy data into <em>clear decisions.</em></h1>
+          <p class="hero-text">I’m Aman Singh, a recent Computer Science graduate and aspiring data analyst looking for my first opportunity to turn raw data into useful stories, practical models, and decisions people can act on.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore my work <span>&darr;</span></a>
+            <a class="button button-quiet" href="my_resume's/Aman_Singh_Resume.docx" download>Download resume <span>&darr;</span></a>
+            <a class="button button-quiet" href="#contact">Let's talk <span>&nearr;</span></a>
+          </div>
+          <div class="hero-meta">
+            <span><strong>01</strong> Data analysis</span>
+            <span><strong>02</strong> Python & SQL</span>
+            <span><strong>03</strong> Power BI</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Decorative data visualization">
+          <div class="art-label">CURRENTLY EXPLORING <span>2026</span></div>
+          <img class="profile-photo" src="my_picture/aman-profile-picture1.jpeg" alt="Aman Singh standing outdoors">
+          <span class="orb orb-one"></span><span class="orb orb-two"></span><span class="plus plus-one">+</span><span class="plus plus-two">+</span>
+        </div>
+      </section>
+
+      <section id="work" class="section work-section">
+        <div class="section-heading">
+          <div><p class="eyebrow">Selected work / 01</p><h2>Projects with a purpose.</h2></div>
+          <p class="section-intro">A few things I have built while learning how data can answer better questions.</p>
+        </div>
+        <article class="featured-project">
+          <div class="project-visual">
+            <div class="visual-window">
+              <div class="window-bar"><span></span><span></span><span></span><small>churn_model.py</small></div>
+              <div class="code-lines"><b>01</b><p><span class="purple">model</span> = <span class="blue">RandomForestClassifier</span>(</p><p>&nbsp;&nbsp;&nbsp;&nbsp;n_estimators=<span class="orange">200</span>,</p><p>&nbsp;&nbsp;&nbsp;&nbsp;class_weight=<span class="green">'balanced'</span>)</p><p><span class="purple">model</span>.fit(X_train, y_train)</p><p class="result"><span>&gt;&gt;</span> risk_score: <strong>0.784</strong></p></div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-number">01 / FEATURED PROJECT</div>
+            <h3>Customer Churn<br><em>Prediction</em></h3>
+            <p>An end-to-end machine learning project that helps telecom teams identify customers likely to leave and prioritize retention efforts.</p>
+            <div class="tag-list"><span>Python</span><span>Scikit-learn</span><span>Streamlit</span><span>EDA</span></div>
+            <div class="project-links"><a href="https://customerchurnprediction-by-aman.streamlit.app/" target="_blank" rel="noreferrer">Live demo <span>&nearr;</span></a><a href="https://github.com/gusainaman07/Customer_Churn_Prediction" target="_blank" rel="noreferrer">Source code <span>&nearr;</span></a></div>
+          </div>
+        </article>
+        <div class="project-grid">
+          <article class="mini-project"><div class="mini-icon icon-bars"><span></span><span></span><span></span><span></span></div><p class="project-number">02 / CUSTOMER ANALYTICS</p><h3>My Customer Analysis</h3><p>Customer-level analysis using Python, Pandas, and SQL to explore behavior and business patterns.</p><div class="tag-list"><span>Python</span><span>SQL</span><span>Power BI</span></div><a class="text-link" href="https://github.com/gusainaman07/my-customer-analysis" target="_blank" rel="noreferrer">View project <span>&nearr;</span></a></article>
+          <article class="mini-project"><div class="mini-icon icon-spark">✳</div><p class="project-number">03 / DATA ANALYSIS</p><h3>Customer Trends</h3><p>Interactive analysis of customer purchasing trends, segments, loyalty, and category performance.</p><div class="tag-list"><span>Python</span><span>SQL</span><span>Power BI</span></div><a class="text-link" href="https://github.com/gusainaman07/customer-trends-data-analysis" target="_blank" rel="noreferrer">View project <span>&nearr;</span></a></article>
+          <article class="mini-project"><p class="project-number">04 / MACHINE LEARNING</p><h3>SMS Spam Detector</h3><p>A machine learning classifier that separates spam from legitimate messages.</p><div class="tag-list"><span>Python</span><span>ML</span></div><a class="text-link" href="https://github.com/gusainaman07/SMS-Spam-detector" target="_blank" rel="noreferrer">View project <span>&nearr;</span></a></article>
+          <article class="mini-project"><p class="project-number">05 / HARDWARE</p><h3>Portable ECG Monitor</h3><p>A portable monitoring concept combining healthcare needs with an embedded systems approach.</p><div class="tag-list"><span>IoT</span><span>Healthcare</span></div><a class="text-link" href="https://github.com/gusainaman07/Portable-ECG-Monitoring-System" target="_blank" rel="noreferrer">View project <span>&nearr;</span></a></article>
+          <article class="mini-project"><p class="project-number">06 / RECOMMENDATION</p><h3>Movie Recommender</h3><p>A recommendation system that uses user and movie data to surface relevant titles.</p><div class="tag-list"><span>Python</span><span>Recommendation</span></div><a class="text-link" href="https://github.com/gusainaman07/movie-recommender-system1" target="_blank" rel="noreferrer">View project <span>&nearr;</span></a></article>
+          <article class="mini-project"><p class="project-number">07 / DATA QUALITY</p><h3>E-commerce Revenue Reliability</h3><p>A data-quality framework for improving e-commerce revenue reporting, validating business metrics, and making insights more reliable.</p><div class="tag-list"><span>Python</span><span>SQL</span><span>Data quality</span></div><a class="text-link" href="https://github.com/gusainaman07/E-commerce-Data-Quality-Revenue-Reliability-Framework" target="_blank" rel="noreferrer">View project <span>&nearr;</span></a></article>
+        </div>
+      </section>
+
+      <section id="about" class="section about-section">
+        <div class="about-stamp"><img class="about-portrait" src="my_picture/WhatsApp%20Image%202026-09-07%20at%209.51.50%20PM.jpeg" alt="Aman Singh portrait"></div>
+        <div class="about-copy"><p class="eyebrow">A little context / 02</p><h2>Curious by nature.<br><em>Practical by default.</em></h2><p>I graduated in July 2026 with a Bachelor of Technology in Computer Science and Engineering from Tula’s University, Dehradun. I enjoy cleaning messy datasets, finding patterns, and communicating insights through dashboards and clear visual stories.</p><p>Beyond projects, I’m a core member of the ACM Student Chapter and a three-time hackathon podium finisher, including wins at National Level Viksit Bharat, Hack The Future 2.0, and Startup Uttarakhand.</p><a class="text-link" href="https://github.com/gusainaman07" target="_blank" rel="noreferrer">Follow the journey <span>&nearr;</span></a></div>
+      </section>
+
+      <section id="highlights" class="section highlights-section">
+        <div class="section-heading"><div><p class="eyebrow">Beyond the projects / 03</p><h2>Milestones worth sharing.</h2></div><p class="section-intro">Learning, competing, and contributing alongside the technical work.</p></div>
+        <div class="highlight-grid">
+          <article><span class="highlight-year">2025</span><h3>National Hackathon 2025</h3><p>Secured 3rd position among 100+ teams after a 30-hour coding marathon at Shivalik College Dehradun and received a ₹15,000 prize.</p></article>
+          <article><span class="highlight-year">2025</span><h3>Hack The Future 2.0</h3><p>Finished 2nd Runner-Up at a national-level 30-hour coding competition hosted by Tula’s University. Our team also built a cardiogram prototype during the hackathon.</p></article>
+          <article><span class="highlight-year">2025</span><h3>National Ideathon 2025</h3><p>Secured 2nd position among 180+ teams with a ₹25,000 prize and a ₹5 lakh seed grant to develop the solution.</p></article>
+          <article><span class="highlight-year">LEADERSHIP</span><h3>ACM Student Chapter</h3><p>Core member contributing to technical events, peer learning, and student community initiatives.</p></article>
+          <article><span class="highlight-year">CERTIFIED</span><h3>SQL & Web Scraping</h3><p>Completed Introduction to SQL and Basics of Web Scraping with Beautiful Soup for Beginners.</p></article>
+          <article><span class="highlight-year">GRADUATE</span><h3>B.Tech Computer Science</h3><p>Completed at Tula’s University, Dehradun · 2022–2026.</p></article>
+        </div>
+      </section>
+
+      <section id="hackathon-gallery" class="section hackathon-gallery">
+        <div class="section-heading"><div><p class="eyebrow">Hack The Future 2.0 / 04</p><h2>A milestone worth remembering.</h2></div><p class="section-intro">Building a cardiogram prototype, presenting our work, and taking home 2nd Runner-Up.</p></div>
+        <div class="gallery-grid">
+          <figure class="gallery-item"><img src="hack-the-future2.0/WhatsApp%20Image%202026-09-07%20at%209.08.44%20PM.jpeg" alt="Hack The Future 2.0 team selfie"><figcaption>Team / building together</figcaption></figure>
+          <figure class="gallery-item"><img src="hack-the-future2.0/WhatsApp%20Image%202026-09-07%20at%209.08.44%20PM%20(1).jpeg" alt="Hack The Future 2.0 award plaque and certificate"><figcaption>Recognition / 2nd Runner-Up</figcaption></figure>
+          <figure class="gallery-item"><img src="hack-the-future2.0/WhatsApp%20Image%202026-09-07%20at%209.08.43%20PM.jpeg" alt="Hack The Future 2.0 award ceremony on stage"><figcaption>On stage / award ceremony</figcaption></figure>
+          <figure class="gallery-item"><img src="hack-the-future2.0/WhatsApp%20Image%202026-09-07%20at%209.08.43%20PM%20(1).jpeg" alt="Hack The Future 2.0 event stage"><figcaption>The event / Tula's University</figcaption></figure>
+          <figure class="gallery-item"><img src="hack-the-future2.0/WhatsApp%20Image%202026-09-07%20at%209.08.42%20PM.jpeg" alt="Aman holding the Hack The Future 2.0 trophy and large prize cheque"><figcaption>Winning moment / trophy and prize</figcaption></figure>
+        </div>
+      </section>
+
+      <section id="achievements" class="section achievement-section">
+        <div class="section-heading"><div><p class="eyebrow">Team Clover / 05</p><h2>Two national wins in 48 hours.</h2></div><p class="section-intro">A consecutive run of competition, collaboration, and ideas that moved from the page toward real-world impact.</p></div>
+        <div class="achievement-layout">
+          <div class="achievement-copy">
+            <h3>Built on teamwork. Driven by purpose.</h3>
+            <p>On 8 and 9 October 2025, Team Clover from Tula’s University achieved two consecutive national-level wins at Shivalik College Dehradun. Each challenge pushed us to refine our ideas, strengthen our execution, and keep building together.</p>
+            <div class="achievement-list">
+              <div><strong>National Hackathon 2025 / 8 October</strong><p>After an intense 30-hour coding marathon among 100+ teams from across India, we secured 3rd position and received a ₹15,000 cash prize.</p></div>
+              <div><strong>National Ideathon 2025 / 9 October</strong><p>The next day, we competed among 180+ teams from institutes and startups nationwide, presenting an idea aligned with the United Nations Sustainable Development Goals. We secured 2nd position, a ₹25,000 cash prize, and a ₹5 lakh seed grant to develop the solution.</p></div>
+            </div>
+            <p>Heartfelt thanks to Shivalik College Dehradun for organizing such impactful events and to Tula’s University for its continuous guidance and encouragement.</p>
+            <div class="team-links" aria-label="Team Clover members"><a href="https://www.linkedin.com/in/abhishek-maurya2204/" target="_blank" rel="noreferrer">Abhishek Maurya</a><a href="https://www.linkedin.com/in/devanshu-purohit-867075338/" target="_blank" rel="noreferrer">Devanshu Purohit</a><a href="https://www.linkedin.com/in/aman-singh-a9b589357/" target="_blank" rel="noreferrer">Aman Singh</a><a href="https://www.linkedin.com/in/dhruv-dogra-dex/" target="_blank" rel="noreferrer">Dhruv Dogra</a><a href="https://www.linkedin.com/in/abhinav-singhal-069a16260/" target="_blank" rel="noreferrer">Abhinav Singhal</a></div>
+          </div>
+          <div class="achievement-images"><img src="Team_Clove/WhatsApp%20Image%202026-09-07%20at%209.14.59%20PM.jpeg" alt="Team Clover holding national hackathon and ideathon certificates"><img src="Team_Clove/WhatsApp%20Image%202026-09-07%20at%209.14.59%20PM%20(1).jpeg" alt="Team Clover receiving a 25,000 rupee ideathon prize cheque"></div>
+        </div>
+      </section>
+
+      <section id="startup-uttarakhand" class="section startup-section">
+        <div class="section-heading"><div><p class="eyebrow">Startup Uttarakhand / 06</p><h2>Ideas worth taking further.</h2></div><p class="section-intro">A two-day bootcamp that turned an ambitious pitch into a motivating milestone.</p></div>
+        <div class="startup-layout">
+          <div class="startup-images"><img src="startup_uttarakhand_bootcamp/1753615319432.jpg" alt="Startup Uttarakhand Bootcamp audience and organizers"><img src="startup_uttarakhand_bootcamp/1753615314823.jpg" alt="Startup Uttarakhand Bootcamp certificate ceremony"></div>
+          <div class="startup-copy">
+            <h3>2nd Runner-Up at Startup Uttarakhand.</h3>
+            <p>Over two days at Graphic Era Hill University, Dehradun, the Startup Uttarakhand Bootcamp brought together passionate innovators, mentors, and leaders to fuel entrepreneurship in Uttarakhand. Hosted by TBI GEU in collaboration with TIDES, IIT Roorkee and the District Industries Centre, Dehradun, the experience moved from startup-building sessions to an intensive pitch judged by an expert panel.</p>
+            <p>I’m grateful for the insights shared by Mr. Azam Ali Khan, CEO of TIDES-IIT Roorkee; Mr. Tanuj Dani, Program Manager at TIDES; Dr. Sidharth Arora, CEO of Fermentech Labs; Ms. Anjani Rawat Negi, GM of DIC Dehradun; and the many other inspiring mentors and leaders.</p>
+            <ul class="mentor-list"><li>Recognition: 2nd Runner-Up</li><li>Event: Startup Uttarakhand Bootcamp</li><li>Venue: Graphic Era Hill University, Dehradun</li></ul>
+            <p>This recognition is a motivating milestone on our entrepreneurial journey. Thank you to my teammates <a class="text-link" href="https://www.linkedin.com/in/abhishek-maurya2204/" target="_blank" rel="noreferrer">Abhishek Maurya</a> and <a class="text-link" href="https://www.linkedin.com/in/devanshu-purohit-867075338/" target="_blank" rel="noreferrer">Devanshu Purohit</a> for the dedication, creativity, and hustle that made it possible.</p>
+            <div class="startup-links"><a href="#contact">Let's build bigger <span>&nearr;</span></a><a href="#top">Back to top <span>&uarr;</span></a></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="certificates" class="section certificates-section">
+        <div class="section-heading"><div><p class="eyebrow">Learning / 07</p><h2>Proof of practice.</h2></div><p class="section-intro">Certificates earned while building the technical foundations behind my projects.</p></div>
+        <div class="certificate-grid">
+          <article class="certificate-card"><img src="certificate/sql_certificate.png" alt="Aman Singh certificate of completion for Introduction to SQL"><h3>Introduction to SQL</h3><p>Certificate covering core SQL concepts for working with structured data.</p><a class="certificate-link" href="certificate/sql_certificate.pdf" target="_blank" rel="noreferrer">Open certificate <span>&nearr;</span></a></article>
+          <article class="certificate-card"><img src="certificate/web-scraping.png" alt="Aman Singh certificate of completion for Basics of Web Scraping with Beautiful Soup"><h3>Basics of Web Scraping</h3><p>Certificate covering the fundamentals of web scraping with Beautiful Soup.</p><a class="certificate-link" href="certificate/web-scraping.pdf" target="_blank" rel="noreferrer">Open certificate <span>&nearr;</span></a></article>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills-section">
+        <div class="section-heading"><div><p class="eyebrow">Toolkit / 03</p><h2>Tools I reach for.</h2></div><p class="section-intro">A growing set of tools for exploring, explaining, and shipping ideas.</p></div>
+        <div class="skills-list"><div><span>01</span><h3>Data & analysis</h3><p>Python · Pandas · NumPy · SQL · Excel · Statistical analysis</p></div><div><span>02</span><h3>Visualization</h3><p>Power BI · Matplotlib · Seaborn · Dashboard development</p></div><div><span>03</span><h3>Machine learning</h3><p>Scikit-learn · Logistic regression · Random Forest · Predictive modeling</p></div><div><span>04</span><h3>Tools & workflow</h3><p>Jupyter Notebook · Git · GitHub · VS Code · Streamlit</p></div></div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <p class="eyebrow">Have a question? / 04</p><h2>Let's make something<br><em>meaningful.</em></h2><p>Whether you want to discuss data, a project, or an opportunity, I would love to hear from you.</p><a class="contact-email" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=amangusainofficial@gmail.com" target="_blank" rel="noreferrer">amangusainofficial@gmail.com <span>&nearr;</span></a><div class="contact-socials"><a href="https://github.com/gusainaman07" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/aman-singh-a9b589357/" target="_blank" rel="noreferrer">LinkedIn</a><a href="#top">Back to top &uarr;</a></div>
+      </section>
+    </main>
+    <footer><span>© 2026 Aman</span><span>Aspiring Data Analyst · Python · SQL · Power BI</span></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
