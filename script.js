@@ -15,6 +15,24 @@ siteNav.querySelectorAll("a").forEach((link) => {
 
 const copyEmailButton = document.querySelector(".copy-email");
 
+const musicToggle = document.querySelector("#music-toggle");
+const musicLabel = document.querySelector("#music-label");
+const backgroundMusic = document.querySelector("#background-music");
+
+musicToggle.addEventListener("click", async () => {
+  if (backgroundMusic.paused) {
+    await backgroundMusic.play();
+    musicLabel.textContent = "Pause music";
+    musicToggle.setAttribute("aria-label", "Pause background music");
+    musicToggle.setAttribute("aria-pressed", "true");
+  } else {
+    backgroundMusic.pause();
+    musicLabel.textContent = "Play music";
+    musicToggle.setAttribute("aria-label", "Play background music");
+    musicToggle.setAttribute("aria-pressed", "false");
+  }
+});
+
 copyEmailButton.addEventListener("click", async () => {
   const email = copyEmailButton.dataset.email;
 

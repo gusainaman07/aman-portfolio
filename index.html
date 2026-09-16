@@ -18,8 +18,8 @@
     .certificates-section{padding-top:0}.certificate-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.certificate-card{border-top:1px solid var(--line);padding-top:16px}.certificate-card img{display:block;width:100%;height:360px;object-fit:contain;background:#e7ebd7;border:1px solid var(--line)}.certificate-card h3{margin:16px 0 8px;font-size:20px}.certificate-card p{margin:0 0 14px;color:var(--muted);font-size:13px;line-height:1.6}.certificate-link{font:500 11px "DM Mono",monospace;text-transform:uppercase;border-bottom:1px solid var(--ink)}@media(max-width:760px){.certificate-grid{grid-template-columns:1fr}.certificate-card img{height:320px}}
     .about-portrait{display:block;width:min(100%,360px);height:430px;object-fit:cover;object-position:center 28%;border:10px solid var(--ink);box-shadow:14px 14px 0 rgba(23,33,29,.15)}@media(max-width:760px){.about-portrait{width:220px;height:280px;margin:0 auto 35px}}
     .hero-contact{display:flex;align-items:center;gap:12px;margin-top:24px;color:var(--muted);font:12px "DM Mono",monospace}.hero-email{color:var(--ink)}.copy-email{border:1px solid var(--line);background:transparent;color:var(--ink);padding:8px 10px;font:500 10px "DM Mono",monospace;text-transform:uppercase;cursor:pointer}.copy-email:hover{background:var(--ink);color:var(--lime)}@media(max-width:760px){.hero-contact{align-items:flex-start;flex-direction:column;gap:8px}.hero-email{font-size:11px}}
-    .role-summary{margin:0 0 30px;color:var(--ink);font:500 11px "DM Mono",monospace;letter-spacing:.04em;text-transform:uppercase}.role-summary span{color:var(--muted);margin-right:8px}@media(max-width:760px){.site-nav{max-height:calc(100vh - 76px);overflow-y:auto}}
-    @media(min-width:761px){.site-header{gap:24px}.site-nav{gap:18px;font-size:11px}}
+    .role-summary{margin:0 0 30px;color:var(--ink);font:500 11px "DM Mono",monospace;letter-spacing:.04em;text-transform:uppercase}.role-summary span{color:var(--muted);margin-right:8px}.resume-section{padding-top:0}.resume-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.resume-card{border:1px solid var(--line);padding:28px;background:#eef0e7;display:flex;flex-direction:column;min-height:260px}.resume-card .project-number{margin-bottom:30px}.resume-card h3{margin:0 0 12px;font-size:27px;line-height:1.1}.resume-card p{margin:0;color:var(--muted);font-size:14px;line-height:1.7;max-width:440px}.resume-actions{display:flex;gap:18px;flex-wrap:wrap;margin-top:auto;padding-top:30px}.resume-actions a{font:500 11px "DM Mono",monospace;text-transform:uppercase;border-bottom:1px solid var(--ink)}@media(max-width:760px){.site-nav{max-height:calc(100vh - 76px);overflow-y:auto}.resume-grid{grid-template-columns:1fr}.resume-card{min-height:230px}}
+    @media(min-width:761px){.site-header{gap:24px}.site-nav{gap:18px;font-size:11px}}.music-player{position:fixed;right:28px;bottom:28px;z-index:10}.music-toggle{display:grid;place-items:center;width:50px;height:50px;border:1px solid var(--line);border-radius:50%;background:rgba(245,245,239,.92);color:#8b6d1c;padding:0;cursor:pointer;font:500 10px "DM Mono",monospace;text-transform:uppercase;box-shadow:0 4px 14px rgba(23,33,29,.06)}.music-toggle:hover,.music-toggle[aria-pressed="true"]{background:var(--ink);color:var(--lime)}.music-icon{font-size:18px;line-height:1}.music-player audio{display:none}.music-player #music-label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.end-scene{padding:0 0 34px;text-align:center;transform:translateY(-55px)}.end-scene img{display:block;width:min(100%,400px);height:auto;margin:0 auto;image-rendering:pixelated}.end-scene figcaption{margin-top:10px;color:var(--muted);font:10px "DM Mono",monospace;letter-spacing:.08em;text-transform:uppercase}@media(max-width:760px){.music-player{right:18px;bottom:18px}.end-scene{padding-bottom:26px;transform:translateY(-32px)}.end-scene img{width:min(100%,320px)}}
   </style>
 </head>
 <body>
@@ -29,16 +29,12 @@
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav id="site-nav" class="site-nav" aria-label="Main navigation">
         <a href="#work">Work</a>
+        <a href="#resumes">Resumes</a>
         <a href="#about">About</a>
         <a href="#highlights">Highlights</a>
-        <a href="#hackathon-gallery">Photos</a>
-        <a href="#achievements">Wins</a>
-        <a href="#startup-uttarakhand">Startup</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a class="header-link" href="my_resume's/Aman_Singh_Resume (5).pdf" download>Resume <span>&darr;</span></a>
+      <a class="header-link" href="#resumes">Resumes <span>&darr;</span></a>
       <a class="header-link" href="https://www.linkedin.com/in/aman-singh-a9b589357/" target="_blank" rel="noreferrer">LinkedIn <span>&nearr;</span></a>
       <a class="header-link" href="https://github.com/gusainaman07" target="_blank" rel="noreferrer">GitHub <span>&nearr;</span></a>
     </header>
@@ -46,19 +42,19 @@
     <main id="top">
       <section class="hero section">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot"></span> Open to entry-level data roles</p>
+          <p class="eyebrow"><span class="status-dot"></span> Open to fresher software & data roles</p>
           <div class="hero-contact"><span class="hero-email">amangusainofficial@gmail.com</span><button class="copy-email" type="button" data-email="amangusainofficial@gmail.com">Copy email</button></div>
-          <h1>I turn messy data into <em>clear decisions.</em></h1>
-          <p class="hero-text">I’m Aman Singh, a recent Computer Science graduate and aspiring data analyst looking for my first opportunity to turn raw data into useful stories, practical models, and decisions people can act on.</p>
+          <h1>I build useful things with <em>code and data.</em></h1>
+          <p class="hero-text">I’m Aman Singh, a recent Computer Science graduate looking for my first opportunity in software engineering or data analytics. I enjoy building practical products, solving technical problems, and turning information into decisions people can act on.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#work">Explore my work <span>&darr;</span></a>
-            <a class="button button-quiet" href="my_resume's/Aman_Singh_Resume (5).pdf" download>Download resume <span>&darr;</span></a>
+            <a class="button button-quiet" href="#resumes">View resumes <span>&darr;</span></a>
             <a class="button button-quiet" href="#contact">Let's talk <span>&nearr;</span></a>
           </div>
           <div class="hero-meta">
-            <span><strong>01</strong> Data analysis</span>
-            <span><strong>02</strong> Python & SQL</span>
-            <span><strong>03</strong> Power BI</span>
+            <span><strong>01</strong> Software engineering</span>
+            <span><strong>02</strong> Data analysis</span>
+            <span><strong>03</strong> Python & SQL</span>
           </div>
         </div>
         <div class="hero-art" aria-label="Decorative data visualization">
@@ -68,10 +64,18 @@
         </div>
       </section>
 
+      <section id="resumes" class="section resume-section">
+        <div class="section-heading"><div><p class="eyebrow">Role-specific profiles / 01</p><h2>Choose the work you want to see.</h2></div><p class="section-intro">Two versions of my resume for the two directions I am actively pursuing as a fresher.</p></div>
+        <div class="resume-grid">
+          <article class="resume-card"><p class="project-number">01 / SOFTWARE ENGINEERING</p><h3>Software Engineering Resume</h3><p>For entry-level software engineering roles focused on programming, problem solving, applications, and building reliable products.</p><div class="resume-actions"><a href="my_resume's/aman-main.pdf" target="_blank" rel="noreferrer">View resume <span>&nearr;</span></a><a href="my_resume's/aman-main.pdf" download>Download PDF <span>&darr;</span></a></div></article>
+          <article class="resume-card"><p class="project-number">02 / DATA ANALYTICS</p><h3>Data Analyst Resume</h3><p>For entry-level data analyst roles focused on Python, SQL, dashboards, exploration, and communicating useful insights.</p><div class="resume-actions"><a href="my_resume's/Aman_Singh_Resume (5) (3).pdf" target="_blank" rel="noreferrer">View resume <span>&nearr;</span></a><a href="my_resume's/Aman_Singh_Resume (5) (3).pdf" download>Download PDF <span>&darr;</span></a></div></article>
+        </div>
+      </section>
+
       <section id="work" class="section work-section">
         <div class="section-heading">
           <div><p class="eyebrow">Selected work / 01</p><h2>Projects with a purpose.</h2></div>
-          <p class="section-intro">A few things I have built while learning how data can answer better questions.</p>
+          <p class="section-intro">A mix of software, machine learning, and data projects built to answer real questions and solve practical problems.</p>
         </div>
         <article class="featured-project">
           <div class="project-visual">
@@ -169,14 +173,19 @@
 
       <section id="skills" class="section skills-section">
         <div class="section-heading"><div><p class="eyebrow">Toolkit / 03</p><h2>Tools I reach for.</h2></div><p class="section-intro">A growing set of tools for exploring, explaining, and shipping ideas.</p></div>
-        <div class="skills-list"><div><span>01</span><h3>Data & analysis</h3><p>Python · Pandas · NumPy · SQL · Excel · Statistical analysis</p></div><div><span>02</span><h3>Visualization</h3><p>Power BI · Matplotlib · Seaborn · Dashboard development</p></div><div><span>03</span><h3>Machine learning</h3><p>Scikit-learn · Logistic regression · Random Forest · Predictive modeling</p></div><div><span>04</span><h3>Tools & workflow</h3><p>Jupyter Notebook · Git · GitHub · VS Code · Streamlit</p></div></div>
+        <div class="skills-list"><div><span>01</span><h3>Software engineering</h3><p>Python · C++ · JavaScript · Problem solving · OOP · Application development</p></div><div><span>02</span><h3>Data & analysis</h3><p>Python · Pandas · NumPy · SQL · Excel · Statistical analysis</p></div><div><span>03</span><h3>Visualization & ML</h3><p>Power BI · Matplotlib · Seaborn · Scikit-learn · Predictive modeling</p></div><div><span>04</span><h3>Tools & workflow</h3><p>Git · GitHub · VS Code · Jupyter Notebook · Streamlit · APIs</p></div></div>
       </section>
 
       <section id="contact" class="section contact-section">
         <p class="eyebrow">Have a question? / 04</p><h2>Let's make something<br><em>meaningful.</em></h2><p>Whether you want to discuss data, a project, or an opportunity, I would love to hear from you.</p><a class="contact-email" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=amangusainofficial@gmail.com" target="_blank" rel="noreferrer">amangusainofficial@gmail.com <span>&nearr;</span></a><div class="contact-socials"><a href="https://github.com/gusainaman07" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/aman-singh-a9b589357/" target="_blank" rel="noreferrer">LinkedIn</a><a href="#top">Back to top &uarr;</a></div>
       </section>
     </main>
-    <footer><span>© 2026 Aman</span><span>Aspiring Data Analyst · Python · SQL · Power BI</span></footer>
+    <div class="music-player">
+      <button id="music-toggle" class="music-toggle" type="button" aria-label="Play background music" aria-pressed="false"><span class="music-icon">&#9835;</span><span id="music-label">Play music</span></button>
+      <audio id="background-music" loop preload="metadata" src="background-music/portfolio-music.mp3"></audio>
+    </div>
+    <figure class="end-scene"><img src="gif-image/duel.gif" alt="Pixel-art duel animation"><figcaption>Until the next build</figcaption></figure>
+    <footer><span>© 2026 Aman</span><span>Software Engineering · Data Analytics · Python · SQL</span></footer>
   </div>
   <script src="script.js"></script>
 </body>
